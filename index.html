@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=980, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crytals Game</title>
+</head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <h1>Crystal Collector</h1>
+            </nav>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card" id="pbg">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+                        <p>The value of each crystal is hidden from you until you click on it</p>
+                        <p>Each time the game starts, the game will change the values of each crystal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="number">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="btn btn-primary" id="btnrandom">
+                        <h1>START</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="crystals">
+                <div class="col-lg-3"  id="crystals">
+                <div class="card">
+                    <div id="crystal1">
+                        <img  src="assets/images/crystal-1.png">
+                        </div>
+                        <img id="crystal2" src="assets/images/crystal-2.png">
+                </div>
+                </div>
+                <div class="col-lg-6" id="crystals">
+                <div class="card">
+                    <div id="winloss">
+                        <p style="color:
+                        green;"id="wins">Wins: </p>
+                        <p style="color:
+                        red;" id="loss">Loss: </p>
+                        <div id="points">
+                            <center><p>So Far:</p></center>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-3" id="crystals">
+                <div class="card">
+                    <div id="crystal3">
+                        <img id="crystal1" src="assets/images/crystal-4.png">
+                        <img id="crystal4" src="assets/images/crystal-6.png">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>  
+                
+        <!-- <script src="jquery-3.3.1.min.js"></script> -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--linked js file-->
+        <script src = "assets/javascript/game.js"></script>
+</body>
+</html>
