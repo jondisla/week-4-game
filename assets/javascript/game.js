@@ -29,12 +29,28 @@ $( document ).ready(function() {
         for (var i = 0; i < crystalLength; i++) {
         var crysnum = Math.floor(Math.random() * 10)
 
-        if(crysnum )
+        // randomize = randomize + crysnum;
+        // crysnum++;
 
-        randomize = randomize + crysnum;
-        $('#points').append('<div>',crysnum,'</div>')
-        $('#crystal2').append('<div>',crysnum,'</div>')
-        }
+        console.log(parseInt(crystalLength++)
+        // $('#points').append('<div>',crysnum,'</div>')
+        // $('#crystal2').append('<div>',crysnum,'</div>')
+        )} 
     })
+    
+        // var addCrys = function(){
+        //     var div = document.createElement("div");
+        //     $(div).attr("class", "ie-message");
+        //     $.('body').append(div);
 
+        //     var subDiv = document.createElement("div");
+        //     $(subDiv).attr("class", "browser-list");
+        //     $.(div).append(subDiv);
+        // }
+
+
+
+
+
+    
 });
