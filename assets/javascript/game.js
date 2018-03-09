@@ -22,20 +22,56 @@ $( document ).ready(function() {
     })
 
     //crystal values
-    $('#crystals').click(function() {
+    $('#crystal1').click(function() {
         var crystalLength = 1;
         var randomize = "";
 
         for (var i = 0; i < crystalLength; i++) {
         var crysnum = Math.floor(Math.random() * 10)
 
-        // randomize = randomize + crysnum;
-        // crysnum++;
+        randomize = parseInt(randomize) + parseInt(crysnum);
+        crysnum++;
+        $('#points').append('<div>',crysnum,'</div>')
+        }   
+    })
 
-        console.log(parseInt(crystalLength++)
-        // $('#points').append('<div>',crysnum,'</div>')
-        // $('#crystal2').append('<div>',crysnum,'</div>')
-        )} 
+    $('#crystal2').click(function() {
+        var crystalLength = 1;
+        var randomize = "";
+
+        for (var i = 0; i < crystalLength; i++) {
+        var crysnum = Math.floor(Math.random() * 10)
+
+        randomize = parseInt(randomize) + parseInt(crysnum);
+        crysnum++;
+        $('#points').append('<div>',crysnum,'</div>')
+        }   
+    })
+
+    $('#crystal3').click(function() {
+        var crystalLength = 1;
+        var randomize = "";
+
+        for (var i = 0; i < crystalLength; i++) {
+        var crysnum = Math.floor(Math.random() * 10)
+
+        randomize = parseInt(randomize) + parseInt(crysnum);
+        crysnum++;
+        $('#points').append('<div>',crysnum,'</div>')
+        }   
+    })
+
+    $('#crystal4').click(function() {
+        var crystalLength = 1;
+        var randomize = "";
+
+        for (var i = 0; i < crystalLength; i++) {
+        var crysnum = Math.floor(Math.random() * 10)
+
+        randomize = parseInt(randomize) + parseInt(crysnum);
+        crysnum++;
+        $('#points').append('<div>',crysnum,'</div>')
+        }   
     })
     
         // var addCrys = function(){
